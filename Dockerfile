@@ -34,7 +34,7 @@ EXPOSE 9876
 
 COPY ./config.example.ini /opt/config.ini
 RUN chmod -x /opt/config.ini
-COPY ./docker/entrypoint.sh /entrypoint.sh
+COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
